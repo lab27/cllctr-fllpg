@@ -1,24 +1,24 @@
 {
-  "name": "burmashave",
+  "name": "cllctr-fllpg",
   "version": "1.0.0",
-  "description": "Prototype",
+  "description": "Welcome to Collecture",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lab27/burmashave.git"
+    "url": "git+https://github.com/lab27/cllctr-fllpg.git"
   },
   "keywords": [
-    "burmashave"
+    "collecture"
   ],
   "author": "Nick Niles",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lab27/burmashave/issues"
+    "url": "https://github.com/lab27/cllctr-fllpg/issues"
   },
-  "homepage": "https://github.com/lab27/burmashave#readme",
+  "homepage": "https://github.com/lab27/cllctr-fllpg#readme",
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "fullpage.js": "^2.9.0",

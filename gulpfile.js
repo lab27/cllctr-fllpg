@@ -11,23 +11,24 @@ const siteRoot = '_site';
 const cssFiles = '_css/**/*.?(s)css';
 
 gulp.task("scripts", function() {
-  console.log("-- gulp is running task 'scripts'");
- 
-  gulp.src("js/app.js")
+   gulp.src("js/app.js")
     .pipe(include())
       .on('error', console.log)
     .pipe(gulp.dest("_site/js"));
-
-  // gulp.src("css/main.scss")
-  //   .pipe(include())
-  //     .on('error', console.log)
-  //   .pipe(gulp.dest("_site/css"));
 });
 
 gulp.task('css', () => {
   gulp.src(cssFiles)
     .pipe(sass({includePaths: ['./_sass']}))
-    .pipe(concat('wink.css'))
+    .pipe(concat('all.css'))
+    .pipe(include({
+    extensions: "css",
+    hardFail: true,
+    includePaths: [
+      __dirname + "/node_modules"
+     // __dirname + "/src/js"
+    ]
+  }))
     .pipe(gulp.dest('css'));
 });
 
