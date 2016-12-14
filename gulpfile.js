@@ -9,6 +9,7 @@ const include = require("gulp-include");
 
 const siteRoot = '_site';
 const cssFiles = '_css/**/*.?(s)css';
+const jsFiles = 'js/*.js';
 
 gulp.task("scripts", function() {
    gulp.src("js/app.js")
@@ -59,6 +60,7 @@ gulp.task('serve', () => {
   });
 
   gulp.watch(cssFiles, ['css']);
+  //gulp.watch(jsFiles, ['scripts']);
 });
 
 gulp.task('default', ['css', 'scripts', 'jekyll', 'serve']);
